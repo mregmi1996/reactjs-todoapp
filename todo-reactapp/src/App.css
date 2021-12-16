@@ -1,0 +1,10 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./sass/main.scss ***!
+  \*********************************************************************************************************/
+
+  div{
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }

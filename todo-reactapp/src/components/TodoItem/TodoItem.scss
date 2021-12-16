@@ -1,0 +1,63 @@
+@import '_mixins';
+@import '_variables';
+
+.todo-block{
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 1000px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        .active, &:hover{
+            background-color: #555;
+        }
+    }     
+    .content-hidden{
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f2f2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+    .content-show{
+        padding: 20px;
+        display: block;
+        overflow: hidden;
+        background-color: #f2f2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+}
+.todo-list{
+    display: flex;
+}
+.to-do-add{
+    display: flex;
+}
+.toggle-button {
+    @include button-style();
+    padding: 10px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    height: 70px;
+}
+
+.button-1 {
+    @include button-style();
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: 15px;
+    &:hover{
+        background-color: $green-color
+    }
+    &:active{
+        background-color: $green-color;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
